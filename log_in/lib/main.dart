@@ -9,6 +9,8 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:log_in/splash_screen.dart';
+import 'package:log_in/mapPage.dart';
+import 'package:log_in/resetPassword.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -22,6 +24,8 @@ void main() async {
       'register': (context) => MyRegister(),
       'splash_screen': (context) => Mysplash(),
       'flutter': (context) => HomePage(title: 'flutter'),
+      'map': (context)=> SimpleMap(),
+      'resetPassword':(context) => ResetPasswordPage(),
     },
     supportedLocales: L10n.all,
     localizationsDelegates: [
