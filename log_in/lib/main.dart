@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+// import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:log_in/Helpers/home.dart';
 import 'package:log_in/l10n/l10n.dart';
@@ -33,6 +33,7 @@ void main() async {
       GlobalMaterialLocalizations.delegate,
       GlobalCupertinoLocalizations.delegate,
       GlobalWidgetsLocalizations.delegate,
+
     ],
   ));
 }
