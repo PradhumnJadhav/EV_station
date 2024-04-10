@@ -1,7 +1,4 @@
 import 'dart:async';
- 
- 
- 
 import 'package:web_socket_channel/io.dart';
 import 'package:web_socket_channel/web_socket_channel.dart';
 import 'package:flutter/cupertino.dart';
@@ -65,7 +62,7 @@ pushData(int data,DatabaseReference ref,WebSocket socket){
    socket.messages.listen((message) {
    print(message);
 });
-  Navigator.pushNamed(context, 'chargePointHome');
+   Navigator.pushNamed(context, 'chargePointHome');
 
 
  
